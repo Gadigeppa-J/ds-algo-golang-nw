@@ -86,3 +86,48 @@ func (q *Queue) Peek() int {
 func (q *Queue) Size() int {
 	return len(q.arr)
 }
+
+// Linked list node defination
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+func NewListNode(val int) *ListNode {
+	return &ListNode{
+		Val: val,
+	}
+}
+
+type LinkedList struct {
+	head *ListNode
+	tail *ListNode
+}
+
+func NewLinkedList() *LinkedList {
+	return &LinkedList{}
+}
+
+func (l *LinkedList) Add(i int) {
+
+	node := &ListNode{
+		Val: i,
+	}
+
+	if l.head == nil {
+		l.head = node
+		l.tail = node
+	} else {
+		l.tail.Next = node
+		l.tail = node
+	}
+
+}
+
+func (l *LinkedList) Head() *ListNode {
+	return l.head
+}
+
+func (l *LinkedList) Tail() *ListNode {
+	return l.tail
+}
