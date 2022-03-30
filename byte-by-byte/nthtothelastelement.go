@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
@@ -13,10 +11,6 @@ Question:​ Given a linked list, and an input n, write a function that returns 
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
-
-func main() {
-	fmt.Println(nthToLast(utils.CreateLinkedList(1), 1))
-}
 
 func nthToLast(l *utils.ListNode, index int) int {
 
