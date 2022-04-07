@@ -87,6 +87,49 @@ func (q *Queue) Size() int {
 	return len(q.arr)
 }
 
+// Queue generic
+type GenericQueue struct {
+	arr []interface{}
+}
+
+func NewGenericQueue() *GenericQueue {
+	return &GenericQueue{
+		arr: []interface{}{},
+	}
+}
+
+func (q *GenericQueue) Enqueue(i interface{}) {
+	q.arr = append(q.arr, i)
+}
+
+func (q *GenericQueue) Dequeue() interface{} {
+	if len(q.arr) == 0 {
+		panic("Queue is empty!")
+	}
+	v := q.arr[0]
+	q.arr = q.arr[1:]
+	return v
+}
+
+func (q *GenericQueue) IsEmpty() bool {
+	if len(q.arr) == 0 {
+		return true
+	}
+	return false
+}
+
+func (q *GenericQueue) Peek() interface{} {
+
+	if len(q.arr) == 0 {
+		panic("Queue is empty!")
+	}
+	return q.arr[0]
+}
+
+func (q *GenericQueue) Size() int {
+	return len(q.arr)
+}
+
 // Linked list node defination
 type ListNode struct {
 	Val  int
@@ -130,4 +173,11 @@ func (l *LinkedList) Head() *ListNode {
 
 func (l *LinkedList) Tail() *ListNode {
 	return l.tail
+}
+
+// Binary Tree Node
+type TreeNode struct {
+	Left  *TreeNode
+	Right *TreeNode
+	Val   int
 }
