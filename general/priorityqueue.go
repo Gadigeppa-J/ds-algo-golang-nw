@@ -1,4 +1,4 @@
-package main
+package general
 
 /*
 func main() {
@@ -24,12 +24,14 @@ func main() {
 }
 */
 
+// Min heap priority queue
 type PriorityQueue struct {
 	arr []*PriorityQueueItem
 }
 
 type PriorityQueueItem struct {
-	Val int
+	Val  int
+	Meta interface{}
 }
 
 func NewPriorityQueue() *PriorityQueue {
@@ -38,20 +40,20 @@ func NewPriorityQueue() *PriorityQueue {
 	}
 }
 
-func (q *PriorityQueue) Insert(i int) {
+func (q *PriorityQueue) Insert(i *PriorityQueueItem) {
 	if len(q.arr) == 0 {
-		q.arr = append(q.arr, &PriorityQueueItem{Val: i})
+		q.arr = append(q.arr, i)
 	} else {
 
 		// insert at last
 		currIndex := len(q.arr)
-		q.arr = append(q.arr, &PriorityQueueItem{Val: i})
+		q.arr = append(q.arr, i)
 
 		for true {
 
 			parentIndex := ((currIndex + 1) / 2) - 1
 
-			if q.arr[parentIndex].Val < q.arr[currIndex].Val {
+			if q.arr[parentIndex].Val > q.arr[currIndex].Val {
 				temp := q.arr[currIndex]
 				q.arr[currIndex] = q.arr[parentIndex]
 				q.arr[parentIndex] = temp
@@ -71,13 +73,13 @@ func (q *PriorityQueue) Insert(i int) {
 
 }
 
-func (q *PriorityQueue) Remove() int {
+func (q *PriorityQueue) Remove() *PriorityQueueItem {
 
 	if len(q.arr) == 0 {
 		panic("Queue is empty!")
 	}
 
-	val := q.arr[0].Val
+	val := q.arr[0]
 
 	// Move last element to root
 	q.arr[0] = q.arr[len(q.arr)-1]
@@ -103,7 +105,7 @@ func (q *PriorityQueue) Remove() int {
 
 			// if no Right child, use only left
 
-			if q.arr[leftChild].Val > q.arr[currIndex].Val {
+			if q.arr[leftChild].Val < q.arr[currIndex].Val {
 				// swap
 				temp := q.arr[leftChild]
 				q.arr[leftChild] = q.arr[currIndex]
@@ -119,9 +121,9 @@ func (q *PriorityQueue) Remove() int {
 
 			// if boht left and right child exists
 
-			if q.arr[leftChild].Val > q.arr[rightChild].Val {
+			if q.arr[leftChild].Val < q.arr[rightChild].Val {
 
-				if q.arr[leftChild].Val > q.arr[currIndex].Val {
+				if q.arr[leftChild].Val < q.arr[currIndex].Val {
 
 					// if left is greater than right
 
@@ -138,7 +140,7 @@ func (q *PriorityQueue) Remove() int {
 
 				// if right is greater than left
 
-				if q.arr[rightChild].Val > q.arr[currIndex].Val {
+				if q.arr[rightChild].Val < q.arr[currIndex].Val {
 					// swap
 					temp := q.arr[rightChild]
 					q.arr[rightChild] = q.arr[currIndex]
@@ -154,4 +156,11 @@ func (q *PriorityQueue) Remove() int {
 
 	return val
 
+}
+
+func (q *PriorityQueue) IsEmpty() bool {
+	if len(q.arr) == 0 {
+		return true
+	}
+	return false
 }
