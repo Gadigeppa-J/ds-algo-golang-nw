@@ -37,3 +37,13 @@ func CreateLinkedList(v ...int) *ListNode {
 
 	return head
 }
+
+func Max(a, b int) int {
+
+	if a > b {
+		return a
+	}
+
+	return b
+
+}
