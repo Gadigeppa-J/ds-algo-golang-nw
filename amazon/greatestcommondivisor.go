@@ -1,15 +1,13 @@
 package main
 
-import "fmt"
-
 /*
 TC: O(min(a, b))
 SC: O(min(a, b))
 */
 
-func main() {
+/* func main() {
 	fmt.Println(gcd(6, 14))
-}
+} */
 
 func gcd(a, b int) int {
 

@@ -18,9 +18,7 @@ SC: O(n)
 
 */
 
-import "fmt"
-
-func main() {
+/* func main() {
 
 	s := NewNStack(3, 10)
 
@@ -53,7 +51,7 @@ func main() {
 	s.push(2, 30)
 	fmt.Println(s.peek(2))
 
-}
+} */
 
 type NStack struct {
 	top     []int

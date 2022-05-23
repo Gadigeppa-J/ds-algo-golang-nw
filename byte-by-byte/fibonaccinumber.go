@@ -1,16 +1,14 @@
 package main
 
-import "fmt"
-
 /*
 https://leetcode.com/problems/fibonacci-number/
 TC: O(n)
 SC: O(1)
 */
 
-func main() {
+/* func main() {
 	fmt.Println(fib(8))
-}
+} */
 
 func fib(n int) int {
 

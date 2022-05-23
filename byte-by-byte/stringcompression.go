@@ -8,16 +8,15 @@ TC: O(1)
 */
 
 import (
-	"fmt"
 	"strconv"
 )
 
-func main() {
+/* func main() {
 
 	chars := []byte{'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'}
 	fmt.Println(compress(chars))
 
-}
+} */
 
 func compress(chars []byte) int {
 

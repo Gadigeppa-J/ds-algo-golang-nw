@@ -37,7 +37,7 @@ func PrintRandomLinkedListAddr(h *RandomListNode) {
 
 }
 
-func main() {
+/* func main() {
 
 	n5 := &RandomListNode{
 		Val: 5,
@@ -66,7 +66,7 @@ func main() {
 
 	PrintRandomLinkedList(cloneRandomLinkedListWithoutExtraSpace(n1))
 
-}
+} */
 
 func cloneRandomLinkedList(head *RandomListNode) *RandomListNode {
 

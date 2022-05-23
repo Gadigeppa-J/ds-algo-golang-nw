@@ -7,17 +7,15 @@ SC: O(1)
 */
 
 import (
-	"fmt"
-
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
-func main() {
+/* func main() {
 
 	prices := []int{7, 1, 5, 3, 6, 4}
 	fmt.Println(maxProfit(prices))
 
-}
+} */
 
 func maxProfit(prices []int) int {
 

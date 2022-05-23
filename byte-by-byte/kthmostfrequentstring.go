@@ -13,13 +13,12 @@ SC: O(n)
 */
 
 import (
-	"fmt"
 	"sort"
 )
 
-func main() {
+/* func main() {
 	fmt.Println(kthMostFrequestString([]string{"a", "b", "c", "a", "b", "a"}, 2))
-}
+} */
 
 type word struct {
 	w    string

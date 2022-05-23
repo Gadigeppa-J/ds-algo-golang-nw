@@ -6,13 +6,11 @@ TC: O(n! * n)
 SC: O(1)
 */
 
-import "fmt"
-
-func main() {
+/* func main() {
 	nums := []int{1, 2, 3}
 
 	fmt.Println(permute(nums))
-}
+} */
 
 func permute(nums []int) [][]int {
 	result := [][]int{}

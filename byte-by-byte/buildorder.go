@@ -15,9 +15,7 @@ TC: O(n)
 SC: O(n)
 */
 
-import "fmt"
-
-func main() {
+/* func main() {
 
 	build := [][]int{{}, {0}, {0}, {1, 2}, {3}}
 	result := []int{}
@@ -34,7 +32,7 @@ func main() {
 
 	fmt.Println(result)
 
-}
+} */
 
 func buildOrder(inx int, build [][]int, isvisited []bool, temp []bool, result *[]int) {
 

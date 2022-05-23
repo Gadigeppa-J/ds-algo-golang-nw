@@ -1,12 +1,10 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
-func main() {
+/* func main() {
 
 	gn3 := &GraphNode{
 		Val: 3,
@@ -39,7 +37,7 @@ func main() {
 		fmt.Println(n.Val)
 	}
 
-}
+} */
 
 type GraphNode struct {
 	Val  int

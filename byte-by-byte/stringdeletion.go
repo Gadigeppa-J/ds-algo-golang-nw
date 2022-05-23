@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
@@ -16,9 +14,9 @@ output: 2
 
 */
 
-func main() {
+/* func main() {
 	fmt.Println(deleteString("abc", []string{"a", "aa", "aaa"}))
-}
+} */
 
 func deleteString(query string, dict []string) int {
 

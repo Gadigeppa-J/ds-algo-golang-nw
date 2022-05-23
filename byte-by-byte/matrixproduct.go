@@ -5,16 +5,14 @@ TC: 2^(r+c)
 */
 
 import (
-	"fmt"
-
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
-func main() {
+/* func main() {
 	//fmt.Println(maxProductPath([][]int{{1, -2, 1}, {1, -2, 1}, {3, -4, 1}}))
 
 	fmt.Println(maxProductPath([][]int{{1, -2, 1}, {1, -2, 1}, {3, -4, 1}}))
-}
+} */
 
 func maxProductPath(grid [][]int) int {
 

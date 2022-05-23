@@ -1,13 +1,13 @@
 package main
 
-import "fmt"
-
+/*
 func main() {
 	words := []string{"abc", "adb", "a", "bcm", "ttm", "llc", "ll"}
 	a := NewAutocomplete(words)
 
 	fmt.Println(a.findAllWordsByPrefix("adbc"))
 }
+*/
 
 type node struct {
 	data     string
