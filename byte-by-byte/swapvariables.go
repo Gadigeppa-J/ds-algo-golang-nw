@@ -1,11 +1,11 @@
 package main
 
-import "fmt"
-
 /*
 34. Swap Variables
 Question:​ Given two integers, write a function that swaps them without using any temporary variables.
 */
+
+/*
 func main() {
 
 	a := 1
@@ -18,3 +18,4 @@ func main() {
 	fmt.Println(a, b)
 
 }
+*/
