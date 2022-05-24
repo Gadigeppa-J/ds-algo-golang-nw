@@ -181,3 +181,47 @@ type TreeNode struct {
 	Right *TreeNode
 	Val   int
 }
+
+// generic stack implementation
+type GenericStack struct {
+	arr []interface{}
+}
+
+func NewGenericStack() *GenericStack {
+	return &GenericStack{
+		arr: []interface{}{},
+	}
+}
+
+func (s *GenericStack) Push(i interface{}) {
+	s.arr = append(s.arr, i)
+}
+
+func (s *GenericStack) Pop() interface{} {
+
+	if s.IsEmpty() {
+		panic("stack is empty!")
+	}
+
+	i := s.arr[len(s.arr)-1]
+
+	s.arr = s.arr[:len(s.arr)-1]
+
+	return i
+}
+
+func (s *GenericStack) IsEmpty() bool {
+
+	if len(s.arr) == 0 {
+		return true
+	}
+
+	return false
+}
+
+func (s *GenericStack) Peek() interface{} {
+	if s.IsEmpty() {
+		panic("stack is empty!")
+	}
+	return s.arr[len(s.arr)-1]
+}
