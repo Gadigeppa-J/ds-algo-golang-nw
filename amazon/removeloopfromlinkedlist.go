@@ -7,6 +7,7 @@ no leetcode
 
 import "github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 
+/*
 func main() {
 
 	n1 := &utils.ListNode{
@@ -34,7 +35,7 @@ func main() {
 
 	utils.PrintLinkedList(n1)
 }
-
+*/
 func removeLoop(head *utils.ListNode) {
 
 	if mp, prev := meetPoint(head); mp != nil {

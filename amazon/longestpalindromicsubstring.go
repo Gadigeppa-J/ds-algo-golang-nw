@@ -1,5 +1,11 @@
 package main
 
+/*
+	https://leetcode.com/problems/longest-palindromic-substring/
+	TC: O(n^2)
+	SC: O(1)
+*/
+
 import "fmt"
 
 func main() {

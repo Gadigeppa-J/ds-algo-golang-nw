@@ -9,17 +9,17 @@ Can we solve it in O(n log(n))??
 */
 
 import (
-	"fmt"
-
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
+/*
 func main() {
 
 	nums := []int{10, 9, 2, 5, 3, 7, 101, 18}
 	fmt.Println(lengthOfLIS(nums))
 
 }
+*/
 
 func lengthOfLIS(nums []int) int {
 

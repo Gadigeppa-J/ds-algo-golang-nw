@@ -7,8 +7,7 @@ TC: O(logn)  both insertion and deletion
 SC: O(1)
 */
 
-import "fmt"
-
+/*
 func main() {
 
 	pq := NewPriorityQueue(7)
@@ -31,7 +30,7 @@ func main() {
 	fmt.Println(pq.dequeue())
 
 }
-
+*/
 type PriorityQueue struct {
 	cap int
 	arr []int

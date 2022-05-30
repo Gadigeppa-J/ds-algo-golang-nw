@@ -8,6 +8,7 @@ SC: O(h)
 
 import "github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 
+/*
 func main() {
 	n1 := &utils.TreeNode{
 		Val: 1,
@@ -20,7 +21,7 @@ func main() {
 
 	flatten(n1)
 }
-
+*/
 var prev *utils.TreeNode
 
 func flatten(root *utils.TreeNode) {

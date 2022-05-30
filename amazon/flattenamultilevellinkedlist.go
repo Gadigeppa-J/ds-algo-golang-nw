@@ -6,14 +6,13 @@ TC: O(n)
 SC: O(n)
 */
 
-import "fmt"
-
 type MultiListNode struct {
 	Val    int
 	Next   *MultiListNode
 	Bottom *MultiListNode
 }
 
+/*
 func main() {
 
 	n5 := &MultiListNode{
@@ -93,6 +92,7 @@ func main() {
 	}
 
 }
+*/
 
 func flattenMultiLevelLinkedList(head *MultiListNode) *MultiListNode {
 

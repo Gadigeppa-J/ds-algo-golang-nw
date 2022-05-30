@@ -6,8 +6,7 @@ TC: O(n^2)
 SC: 1
 */
 
-import "fmt"
-
+/*
 func main() {
 
 	matrix := [][]int{
@@ -21,7 +20,7 @@ func main() {
 	fmt.Println(matrix)
 
 }
-
+*/
 func rotateMatrix(matrix [][]int) {
 
 	transposeMatrix(matrix)

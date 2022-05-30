@@ -8,6 +8,7 @@ SC: O(n)
 
 import "github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 
+/*
 func main() {
 
 	n1 := utils.NewListNode(1)
@@ -24,6 +25,7 @@ func main() {
 	rev := reverseListUsingStack(n1)
 	utils.PrintLinkedList(rev)
 }
+*/
 
 func reverseStackRecursively(head *utils.ListNode) *utils.ListNode {
 	if head == nil || head.Next == nil {

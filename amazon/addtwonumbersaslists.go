@@ -8,6 +8,7 @@ TC: O(1)
 
 import "github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 
+/*
 func main() {
 
 	/*
@@ -40,8 +41,9 @@ func main() {
 
 		l2_n5.Next = l2_n6
 		l2_n6.Next = l2_n4
-	*/
+*/
 
+/*
 	l1_n0 := &utils.ListNode{
 		Val: 5,
 	}
@@ -57,6 +59,7 @@ func main() {
 
 	utils.PrintLinkedList(addTwoNumbers(l1_n0, l2_n0))
 }
+*/
 
 func addTwoNumbers(l1 *utils.ListNode, l2 *utils.ListNode) *utils.ListNode {
 

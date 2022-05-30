@@ -7,11 +7,10 @@ SC: O()
 */
 
 import (
-	"fmt"
-
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
+/*
 func main() {
 
 	n1 := &utils.TreeNode{
@@ -42,7 +41,7 @@ func main() {
 	fmt.Println(rightSideView(n1))
 
 }
-
+*/
 type TreeNodeWrapper2 struct {
 	nd  *utils.TreeNode
 	lvl int

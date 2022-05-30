@@ -8,6 +8,7 @@ SC: O(n)
 
 import "github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 
+/*
 func main() {
 
 	/*
@@ -19,8 +20,9 @@ func main() {
 			Val: 2,
 		}
 
-	*/
+*/
 
+/*
 	n3 := &utils.ListNode{
 		Val: 3,
 	}
@@ -29,8 +31,9 @@ func main() {
 		n4 := &utils.ListNode{
 			Val: 4,
 		}
-	*/
+*/
 
+/*
 	n5 := &utils.ListNode{
 		Val: 5,
 	}
@@ -45,6 +48,7 @@ func main() {
 	utils.PrintLinkedList(reverseBetween(n3, 1, 2))
 
 }
+*/
 
 func reverseBetween(head *utils.ListNode, left int, right int) *utils.ListNode {
 

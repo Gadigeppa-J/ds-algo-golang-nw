@@ -7,12 +7,12 @@ SC: O(n) if result is considered
 */
 
 import (
-	"fmt"
 	"sort"
 
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
+/*
 func main() {
 	intervals := [][]int{
 		{1, 3},
@@ -23,6 +23,7 @@ func main() {
 
 	fmt.Println(mergeIntervals(intervals))
 }
+*/
 
 func mergeIntervals(intervals [][]int) [][]int {
 

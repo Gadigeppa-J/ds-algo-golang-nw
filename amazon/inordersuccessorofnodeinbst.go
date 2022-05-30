@@ -7,11 +7,10 @@ SC: O(1)
 */
 
 import (
-	"fmt"
-
 	"github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 )
 
+/*
 func main() {
 
 	n20 := &utils.TreeNode{
@@ -56,6 +55,7 @@ func main() {
 	fmt.Println(inorderSuccessor(n20, n22))
 
 }
+*/
 
 func inorderSuccessor(node *utils.TreeNode, tar *utils.TreeNode) *utils.TreeNode {
 

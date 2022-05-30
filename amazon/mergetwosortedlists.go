@@ -2,6 +2,7 @@ package main
 
 import "github.com/Gadigeppa-J/ds-algo-golang-nw/utils"
 
+/*
 func main() {
 	pn3 := &utils.ListNode{
 		Val:  4,
@@ -36,6 +37,7 @@ func main() {
 	utils.PrintLinkedList(mergeTwoLists(pn1, qn1))
 
 }
+*/
 
 func mergeTwoLists(list1 *utils.ListNode, list2 *utils.ListNode) *utils.ListNode {
 
