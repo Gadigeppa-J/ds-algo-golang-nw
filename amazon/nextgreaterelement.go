@@ -15,40 +15,24 @@ func main() {
 	fmt.Println(nextGreaterElements(nums))
 }
 
-type GreatItem struct {
-	Val   int
-	Index int
-}
-
 func nextGreaterElements(nums []int) []int {
 
 	res := make([]int, len(nums))
+	s := utils.NewStack()
 
-	s := utils.NewGenericStack()
+	for i := len(nums) - 1; i >= 0; i-- {
 
-	for i := 0; i < len(nums); i++ {
-
-		if s.IsEmpty() {
-			s.Push(GreatItem{
-				Val:   nums[i],
-				Index: i,
-			})
-		} else {
-			for !s.IsEmpty() && s.Peek().(GreatItem).Val < nums[i] {
-				v := s.Pop().(GreatItem)
-				res[v.Index] = nums[i]
-			}
-			s.Push(GreatItem{
-				Val:   nums[i],
-				Index: i,
-			})
+		for !s.IsEmpty() && s.Peek() <= nums[i] {
+			s.Pop()
 		}
 
-	}
+		if !s.IsEmpty() {
+			res[i] = s.Peek()
+		} else {
+			res[i] = -1
+		}
 
-	for !s.IsEmpty() {
-		v := s.Pop().(GreatItem)
-		res[v.Index] = -1
+		s.Push(nums[i])
 	}
 
 	return res
